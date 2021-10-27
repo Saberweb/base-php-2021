@@ -20,7 +20,7 @@ if(isset($_GET['id'])&&ctype_digit($_GET['id'])&&!empty($_GET['id'])){
     $sql="SELECT a.idthearticle, a.thearticletitle,
     u.theuserlogin
 FROM thearticle a
-INNER JOIN  theuser u 
+LEFT JOIN  theuser u 
 ON u.idtheuser = a.theuser_idtheuser
 WHERE a.idthearticle = $idarticle ;";
 
