@@ -77,7 +77,7 @@ if(empty($nbArticle)){
         <td><?=$item['theuserlogin']?></td>
         <td><?=$item['thearticledate']?></td>
         <td><a href='?page=update&id=<?=$item['idthearticle']?>'>Update</a></td>
-        <td><a href='?page=delete&&id=<?=$item['idthearticle']?>'>Delete</a></td>
+        <td><a href='?page=delete&id=<?=$item['idthearticle']?>'>Delete</a></td>
 
     </tr>
     <?php
