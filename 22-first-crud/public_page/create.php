@@ -21,6 +21,10 @@ if(!empty($_POST)){
     if(!empty($titre)&&!empty($texte)){
         $sql = "INSERT INTO thearticle (thearticletitle,thearticletext,theuser_idtheuser) VALUES('$titre','$texte',$idUser)";
         $insert = mysqli_query($db,$sql) or die("Erreur lors de l'insertion : ".mysqli_error($db));
+
+        // redirection
+        header("Location: ./?page=admin");
+
     }
 
 }
